@@ -1,85 +1,82 @@
-// export default function ContactMe() {
-//     return (
-//       <section id="Contact" className="contact--section">
-//         <div>
-//           <p className="sub--title"></p>
-//           <h2>Contact Me</h2>
-//           <p className="text-lg">
-//             Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, odit.
-//           </p>
-//         </div>
-//         <form className="contact--form--container">
-//           <div className="container">
-//             <label htmlFor="first-name" className="contact--label">
-//               <span className="text-md">First Name</span>
-//               <input
-//                 type="text"
-//                 className="contact--input text-md"
-//                 name="first-name"
-//                 id="first-name"
-//                 required
-//               />
-//             </label>
-//             <label htmlFor="last-name" className="contact--label">
-//               <span className="text-md">Last Name</span>
-//               <input
-//                 type="text"
-//                 className="contact--input text-md"
-//                 name="last-name"
-//                 id="last-name"
-//                 required
-//               />
-//             </label>
-//             <label htmlFor="email" className="contact--label">
-//               <span className="text-md">Email</span>
-//               <a class='cmb-fa px-4' href='mailto:reaganrl14@gmail.com' target='_blank' rel='noreferrer noopener'>
-//                 <i class='fas fa-envelope cmb-fa'></i>
-//             </a>
-//               <input
-//                 type="email"
-//                 className="contact--input text-md"
-//                 name="email"
-//                 id="email"
-//                 required
-//               />
-//             </label>
-//             <label htmlFor="phone-number" className="contact--label">
-//               <span className="text-md">phone-number</span>
-//               <input
-//                 type="number"
-//                 className="contact--input text-md"
-//                 name="phone-number"
-//                 id="phone-number"
-//                 required
-//               />
-//             </label>
-//           </div>
-//           <label htmlFor="choode-topic" className="contact--label">
-//             <span className="text-md">Choose a topic</span>
-//             <select id="choose-topic" className="contact--input text-md">
-//               <option>Select One...</option>
-//               <option>Intrested in hiring</option>
-//               <option>Questions</option>
-//               <option>I just really loved this website and had to say something!</option>
-//             </select>
-//           </label>
-//           <label htmlFor="message" className="contact--label">
-//             <span className="text-md">Message</span>
-//             <textarea
-//               className="contact--input text-md"
-//               id="message"
-//               rows="8"
-//               placeholder="Type your message..."
-//             />
-//           </label>
-//           <label htmlFor="checkbox" className="checkbox--label">
-//             <input type="checkbox" required name="checkbox" id="checkbox" />
-//             <span className="text-sm">I accept the terms</span>
-//           </label>
-//           <div>
-//             <button className="btn btn-primary contact--form--btn">Submit</button>
-//           </div>
-//         </form>
-//       </section>
-//     );
-//   }
+import React from 'react';
+
+function SpotifyUI() {
+  return (
+    <div className="app">
+      <div className="sidebar">
+        <img
+          className="logo"
+          src="https://www.scdn.co/i/_global/twitter_card-default.jpg"
+          alt="Spotify Logo"
+        />
+        <ul className="menu">
+          <li className="menu-item active">
+            <a href="/">Home</a>
+          </li>
+          <li className="menu-item">
+            <a href="/">Search</a>
+          </li>
+          <li className="menu-item">
+            <a href="/">Your Library</a>
+          </li>
+          <li className="menu-item">
+            <a href="/">Add Playlist</a>
+          </li>
+          <li className="menu-item">
+            <a href="/">Liked Songs</a>
+          </li>
+          <li className="menu-item">
+            <a href="/">Genres</a>
+          </li>
+        </ul>
+      </div>
+      <div className="main">
+        <div className="header">
+          <input
+            className="search-input"
+            type="text"
+            placeholder="Search"
+          />
+        </div>
+        <div className="content">
+          <div className="playlist-container">
+            <h2>Featured Playlists</h2>
+            <div className="playlist-items">
+              {/* Playlist items */}
+              <div className="playlist-item">
+                <div className="playlist-item-image">
+                  <img
+                    src="https://via.placeholder.com/150"
+                    alt="Playlist"
+                  />
+                </div>
+                <div className="playlist-item-details">
+                  <p className="playlist-item-name">Playlist 1</p>
+                  <p className="playlist-item-description">Description of Playlist 1</p>
+                </div>
+              </div>
+              <div className="playlist-item">
+                <div className="playlist-item-image">
+                  <img
+                    src="https://via.placeholder.com/150"
+                    alt="Playlist"
+                  />
+                </div>
+                <div className="playlist-item-details">
+                  <p className="playlist-item-name">Playlist 2</p>
+                  <p className="playlist-item-description">Description of Playlist 2</p>
+                </div>
+              </div>
+              {/* Add more playlist items */}
+            </div>
+          </div>
+          {/* Add more content sections */}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default SpotifyUI;
+
+
