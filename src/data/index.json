@@ -1,0 +1,170 @@
+{
+    "skills": [
+        {
+            "id": "1",
+            "src": "./img/jsbadge80.png",
+            "title": "JavaScript",
+            "description": ""
+        },
+        {
+            "id": "2",
+            "src": "./img/html.png",
+            "title": "HTML",
+            "description": ""
+        },
+        {
+            "id": "3",
+            "src": "./img/css.png",
+            "title": "CSS",
+            "description": ""
+        },
+        {
+            "id": "4",
+            "src": "./img/reactst.jpg",
+            "title": "React",
+            "description": ""
+        },
+        {
+            "id": "5",
+            "src": "./img/vuejs.png",
+            "title": "Vue.js",
+            "description": ""
+        },
+        {
+            "id": "6",
+            "src": "./img/angular.png",
+            "title": "Angular",
+            "description": ""
+        },
+        {
+            "id": "7",
+            "src": "./img/bootstrap.png",
+            "title": "Bootstrap",
+            "description": ""
+        },
+        {
+            "id": "8",
+            "src": "./img/nodejs.png",
+            "title": "Node.js",
+            "description": ""
+        },
+        {
+            "id": "9",
+            "src": "./img/express-js.png",
+            "title": "Express.js",
+            "description": ""
+        },
+        {
+            "id": "10",
+            "src": "./img/mongo.png",
+            "title": "MongoDB",
+            "description": ""
+        },
+        {
+            "id": "11",
+            "src": "./img/mysql2.png",
+            "title": "MySQL",
+            "description": ""
+        },
+        {
+            "id": "12",
+            "src": "./img/api.png",
+            "title": "API's",
+            "description": ""
+        }
+    ],
+
+
+    "portfolio": [
+        {
+            "id": "10",
+            "src": "./img/Screenshot (44).png",
+            "title": "Echos of Astra",
+            "description": "Meet Astra our AI dream interpreter, Astra allows you to save past interpretations and learns to recognize patterns within your dreams to give a more accurate interpretation everytime you journal one. Developed collaboratively with my team, Astra represents our collective effort to enhance your dream analysis experience. ",
+            "link": "https://echoes-of-astra.onrender.com/dreamInterpretation"
+          },  
+          {
+            "id": "5",
+            "src": "./img/Screenshot (25).png",
+            "title": "Roomeo",
+            "description": "This appliction developed by my team and I, is a roomate matching website designed to find you the perfect roomate based in Miami, simply sign up, fill out our detailed survey, and find your perfect roomate",
+            "link": "https://roomeo-54bd0cc57e2b.herokuapp.com/"
+        },
+        {
+            "id": "4",
+            "src": "./img/Demo.gif",
+            "title": "Cryptos and Comics",
+            "description": "I contributed to a team project creating a cryptocurrency tracker app that also features random jokes. Combining real-time crypto data with humor, our app offers an engaging and entertaining user experience.",
+            "link": "https://dannysaravia001.github.io/Cryptos-and-Comics/"
+        },
+        {
+            "id": "9",
+            "src": "./img/Screenshot (35).png",
+            "title": "Tech Blog",
+            "description": "This application is a CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts as well.",
+            "link": "https://stark-coast-30123-1fdb6d955941.herokuapp.com/"
+        },
+        {
+            "id": "1",
+            "src": "./img/Screenshot (19).png",
+            "title": "Weather Dashboard",
+            "description": "Using an API this application will create a 5 day weather forecast, inlcuding humidity, windspeed, and uv index you can look at the coditions of any city of your choice, a log will also be kept of recent searches so you can easily access them again",
+            "link": "https://reagan1440.github.io/weather-search/"
+          },          
+        {
+            "id": "2",
+            "src": "./img/Screenshot (23).png",
+            "title": "Note Taker",
+            "description": "This application uses an Express.js back end and will save and retrieve note data from a JSON file. Users can keep track of notes easly as well as delete or edit past saved notes",
+            "link": "https://reagansprofessional-note-taker-9e9db5e2619c.herokuapp.com/"
+        },
+        {
+            "id": "3",
+            "src": "./img/Screenshot (24).png",
+            "title": "Password Generator",
+            "description": "This application allows the user to randomly generate a password and choose if they wish to include capital letters, lowercase, numbers, or special characters",
+            "link": "https://reagan1440.github.io/password-generator/"
+        },
+        {
+            "id": "6",
+            "src": "./img/Screenshot (47).png",
+            "title": "E-commerce Database",
+            "description": "This is a back end database for an e-commerce site. using an Express.js API to use Sequelize to interact with a MySQL database. Github repo is linked below",
+            "link": "https://github.com/reagan1440/ORM-E_Commerce?tab=readme-ov-file"
+        },
+        {
+            "id": "8",
+            "src": "./img/Screenshot (39).png",
+            "title": "JATE text editor",
+            "description": "Jate text editor is a single-page application that meets the progressive web application criteria. It features a number of data persistence techniques that serve as redundancy in case one of the options is not supported by the browser. The application will also function offline.",
+            "link": "https://jate-text-editor-f9ma.onrender.com/"
+        }
+    ],
+    "testimonial": [
+        {
+            "id": "1",
+            "count": "5",
+            "src": "./img/placeholder",
+            "description": "Lorem ipsum dolor sit amet,",
+            "author_name": "Reagan Lowe", 
+            "author_designation": "view in browser"
+        },
+        {
+            "id": "2",
+            "count": "5",
+            "src": "./img/placeholder",
+            "description": "Lorem ipsum dolor sit amet,",
+            "author_name": "Reagan Lowe", 
+            "author_designation": "view in browser"
+        },
+        {
+            "id": "3",
+            "count": "5",
+            "src": "./img/placeholder",
+            "description": "Lorem ipsum dolor sit amet,",
+            "author_name": "Reagan Lowe", 
+            "author_designation": "view in browser"
+        }
+      
+    ]
+}
