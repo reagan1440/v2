@@ -672,18 +672,18 @@ font-size: 22px;
   line-height: 150%;
 }
 /* spotify */
-/* App.css */
 .app {
   display: flex;
   height: 100vh;
 }
 
 .sidebar {
-  background-color: #040306;
   width: 250px;
   padding: 20px;
+  height: 100%; /* Set a fixed height *//* Enable vertical scrolling */
+  background-color:  #040306; /* Background color */
+  padding: 20px; /* Add padding for better spacing */
 }
-
 .logo {
   width: 100px;
   margin-bottom: 40px;
@@ -695,12 +695,22 @@ font-size: 22px;
 }
 
 .menu-item {
-  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  transition: background-color 0.3s ease;
 }
 
 .menu-item a {
+  display: flex;
+  align-items: center;
   text-decoration: none;
-  color: #b3b3b3;
+  color: white;
+}
+.menu-icon {
+  width: 30px; /* Adjust icon size as needed */
+  height: 30px; /* Adjust icon size as needed */
+  margin-right: 10px;
 }
 
 .menu-item a:hover {
@@ -717,6 +727,8 @@ font-size: 22px;
   background-color: #121212;
   color: #fff;
   padding: 20px;
+  overflow-y: auto;
+  height: 100vh;
 }
 
 .header {
@@ -733,25 +745,82 @@ font-size: 22px;
 }
 
 .playlist-container {
-  margin-bottom: 40px;
+  height: 100vh; /* Set a fixed height */
+  overflow-y: auto; /* Enable vertical scrolling */
+  background-color: #121212; /* Background color */
+  padding: 20px; /* Add padding for better spacing */
 }
 
 .playlist-items {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
-
 .playlist-item {
   display: flex;
-  background-color: #282828;
+  align-items: center;
+  margin-bottom: 20px;
   padding: 10px;
+  background-color: #282828;
   border-radius: 5px;
 }
 
+/* SpotifyUI.css */
+
+.other-skills-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Span 4 items across */
+  gap: 15px; /* Adjust the gap between items */
+}
+.other-skills-item {
+  width: calc(100%); /* Subtract padding from width */
+  padding: 10px; /* Add padding to create space between items */
+  box-sizing: border-box;
+  padding: 10px; /* Include padding in the width calculation */
+}
+
+.other-skills-item-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 95%;
+  padding: 5px;
+}
+
+.playlist-item-details {
+  padding-top: 10px; /* Add some space between image and title */
+}
+
+.playlist-item-image-other skills-item-img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
 .playlist-item-image {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+.playlist-item-details {
+  flex: 1;
+}
+.section-title {
+  margin-top: 30px;
+}
+
+.recommended-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.recommended-item {
+  width: calc(33.33% - 10px);
+  background-color: #282828;
+  padding: 10px;
+  border-radius: 50px;
 }
 
 .playlist-item-image img {
@@ -760,13 +829,11 @@ font-size: 22px;
   border-radius: 5px;
 }
 
-.playlist-item-details {
-  flex: 1;
-  margin-left: 10px;
-}
 
 .playlist-item-name {
+  margin: 0; /* Remove default margin */
   font-weight: bold;
+  text-align: center;
 }
 
 .playlist-item-description {
