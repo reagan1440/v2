@@ -71,16 +71,15 @@ function MySongs() {
         <div className="content">
           <h2 className='section-title'> A few of my personal favorites! </h2>
           <div className="iframe-container">
-          <iframe
-              style={{ borderRadius: '12px' }}
-              src="https://open.spotify.com/embed/track/2qpacEyFxmbxCpIEqZkqvC?utm_source=generator"
-              width="100%"
-              height="352"
-              frameBorder="0"
-              allowFullScreen=""
-              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              loading="lazy"
-            ></iframe>
+          <iframe style={{borderRadius: '12px'}}
+               src="https://open.spotify.com/embed/track/2p8IJfP7f5A2FF9uR8hlss?utm_source=generator" 
+               width="100%" 
+               height="352" 
+               frameBorder="0" 
+               allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                loading="lazy">
+              </iframe>
            <iframe
               style={{ borderRadius: '12px' }}
               src="https://open.spotify.com/embed/track/3EytfC22ikoXM921cJbejn?utm_source=generator"
@@ -100,15 +99,16 @@ function MySongs() {
               allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
               loading="lazy">
               </iframe>
-              <iframe style={{borderRadius: '12px'}}
-               src="https://open.spotify.com/embed/track/2p8IJfP7f5A2FF9uR8hlss?utm_source=generator" 
-               width="100%" 
-               height="352" 
-               frameBorder="0" 
-               allowfullscreen=""
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-                loading="lazy">
-              </iframe>
+              <iframe
+              style={{ borderRadius: '12px' }}
+              src="https://open.spotify.com/embed/track/2qpacEyFxmbxCpIEqZkqvC?utm_source=generator"
+              width="100%"
+              height="352"
+              frameBorder="0"
+              allowFullScreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+            ></iframe>
               <iframe style={{ borderRadius: '12px'}}
                src="https://open.spotify.com/embed/track/2IWtloZYQDcP8Ashwx8QEF?utm_source=generator" 
                width="100%" 
@@ -145,6 +145,10 @@ function MySongs() {
                     allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                      loading="lazy">
               </iframe>
+              <iframe style={{borderRadius: '12px'}} src="https://open.spotify.com/embed/track/3tYxhPqkioZEV5el3DJxLQ?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              <iframe style={{borderRadius:'12px'}} src="https://open.spotify.com/embed/track/1QUXSToImDkW7CUzJwRrWQ?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              <iframe style={{borderRadius:'12px'}} src="https://open.spotify.com/embed/track/7ybWwXX8VFDhbGsbWvB26M?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              <iframe style={{borderRadius:'12px'}} src="https://open.spotify.com/embed/track/6tWHb2caC8Kuc5oBO8dHmc?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
           </div>
         </div>
       </div>
