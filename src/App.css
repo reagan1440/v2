@@ -208,97 +208,10 @@ font-size: 22px;
   text-decoration: none;
 }
 /* Navbar Content */
-.navbar--content {
-  color: #484d67;
-  font-size: 21px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  cursor: pointer;
-}
-.navbar--active-content {
-  color: black;
-}
-.educationimg {
-  padding-left: 90px;   
-  /* education img!!!! */
-  display: flex;
-}
-
 
 /* Navbar Styler Ends */
 
 /* Hero Section Style */
-.hero--section {
-  display: flex;
-  grid-template-columns: repeat(2, 1fr);
-  padding: 133.333px 85.333px 5px;
-  align-items: center;
-  gap: 32px;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden; 
-}
-.youtube--main {
-  width: 100%; /* Adjust based on how much of the container it should fill */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-
-.youtube--main img {
-  width: 130%; /* Make the image fill the div */
-  height: auto; /* Maintain aspect ratio */
-  max-width: 130%; /* Ensure it doesn't exceed its natural size if you wish */
-  position: relative;
-}
-
-.muted {
-  width: 30px; /* Adjust the width as needed */
-  height: auto; /* Maintain aspect ratio */
-  display: block;
-  display: flex;
-  /* Add other styles as needed */
-}
-.unmuted {
-  width: 30px; /* Adjust the width as needed */
-  height: auto; /* Maintain aspect ratio */
-  /* Add other styles as needed */
-}
-.mute-button {
-  position: fixed; /* Position the button relative to the viewport */
-  bottom: 20px; /* Adjust as needed */
-  left: 20px; /* Adjust as needed */
-  width: 35px; /* Adjust as needed */
-  height: auto;
-  max-width: 35px; /* Ensure the button doesn't exceed its container */
-  color: hidden; /* Hidden color */
-  background-color: transparent; /* Transparent background */
-  border: none; /* No border */
-  z-index: 2; /* Ensure it's above other content */
-}
-
-.mute-button img {
-  display: block; /* Ensure the image is displayed as a block */
-  width: 100%; /* Make the image fill the button */
-  height: auto; /* Maintain aspect ratio */
-}
-
-
-
-/* .spotify-iframe {
-  position: fixed;
-  top: 0;
-  left: 20 !important;
-  width: 250px;
-  height: 152px;
-  border-radius: 12px;
-  padding-left: 90px;
-} */
-
 
 .hero--video {
   position: absolute; /* Position the video absolutely to overlay it on the image */
@@ -459,59 +372,56 @@ font-size: 22px;
 
 
 /* About Us */
-.about--section {
-  display: grid;
-  align-items: center;
-  gap: 60.6px;
-  grid-template-columns: repeat(2, 1fr);
-  background-color: white;
-  padding-top: -5px;
-}
-.about--section--img > img {
-   width: 150%; /* Make the image fill the div */
-  height: auto; /* Maintain aspect ratio */
-  min-width: 120%; 
-}
-.educationimg{
+.container {
   display: flex;
-  width: 100%;
-  height: 100%;
-}
-.hero--section--img {
-  position: relative; /* Set the position of the container to relative */
 }
 
-.port2 {
-  width: 80%; /* Make the image fill the div */
-  height: auto; /* Maintain aspect ratio */
-  min-width: 80%;
-  display: block; /* Ensure the image is treated as a block element */
-  margin: auto; /* Center the image horizontally */
-  padding-left: -40px !important;
-  padding-bottom: 150px !important;
+.navbar {
+  width: 8000px; /* Adjust as needed */
+  height: 80px;
 }
-.hidden-button {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  color: black;
-  cursor: pointer;
-}
-@media screen and (min-width: 768px) {
-  /* Apply styles for screens wider than 768px */
-  .about--section--img > img {
-    width: 100%; /* Reset width for larger screens */
-    min-width: unset; /* Reset min-width for larger screens */
-  }
 
-  .port2 {
-    width: 100%; /* Reset width for larger screens */
-    min-width: unset; /* Reset min-width for larger screens */
-  }
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
 }
+
+.navbar li {
+  margin-bottom: 10px;
+}
+
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.video {
+  margin-right: 160px;
+  margin-top: 140px;
+}
+
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  flex-direction: column;
+  margin-left: 160px;
+}
+
+.image {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.image img {
+  width: 100px; /* Adjust image size as needed */
+  height: auto;
+  grid-template-columns: repeat(1, 2fr);
+}
+
+
 
 @media screen and (min-width: 1024px) {
   /* Apply styles for screens wider than 1024px */
@@ -694,10 +604,11 @@ font-size: 22px;
 .menu {
   list-style: none;
   padding: 0;
+  margin-top: 10;
 }
 
 .menu-item {
-  padding: 10px;
+  padding: 5px;
   border-radius: 5px;
   margin-bottom: 5px;
   transition: background-color 0.3s ease;
@@ -737,6 +648,48 @@ font-size: 22px;
   margin-bottom: 20px;
 }
 
+.pod-item {
+  color: white;
+  width: 17%;
+  padding: 5px;
+  margin: 0;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.menu-item {
+  margin: 0;
+  margin-bottom: 0;
+}
+.p-item {
+  list-style: none;
+  padding: 0;
+  margin-top: 0;
+}
+
+.p-item-item {
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  transition: background-color 0.3s ease;
+  margin-top: 0;
+}
+
+.p-item-item a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+.p-item-icon {
+  width: 30px; /* Adjust icon size as needed */
+  height: 30px; /* Adjust icon size as needed */
+  margin-right: 10px;
+}
+
+.p-item-item a:hover {
+  color: #fff;
+}
 .search-input {
   width: 100%;
   padding: 10px;
@@ -858,6 +811,39 @@ font-size: 22px;
   background-color: #282828;
   padding: 10px;
   border-radius: 50px;
+}
+.nav-play {
+  width: 100%; /* Ensure the image fills its container */
+  background-color: #282828;
+  padding: 5px;
+  border-radius: 30px;
+  color: white;
+  overflow-wrap: break-word;
+  margin-top: 20px;
+}
+.nav-playlistbtn {
+    width: calc(50% - 10px); /* Subtract margin width */
+    margin-bottom: 20px; /* Adjust margin between items */
+    width: 75px;
+  }
+
+  .navplay-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Align items to the left */
+    width: 70%; /* Adjust the width as needed */
+    height: 180px; /* Adjust the height as needed */
+    margin-bottom: -100px;
+    gap: 25px;
+    margin-left: -40px;
+    text-align: center;
+
+  }
+  
+.nav-playlistbtn a {
+  display: block; /* Make the anchor tag a block element */
+  text-align: center; /* Center the content horizontally */
+  color: white;
 }
 
 .playlist-item-image img {

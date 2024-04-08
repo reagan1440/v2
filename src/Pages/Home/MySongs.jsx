@@ -58,7 +58,58 @@ function MySongs() {
       Saved Episodes
     </a>
   </li>
+  <div> 
+  <ul className="navplay-container">
+  <li className="nav-playlistbtn">
+            
+            <p className='nav-play'>Playlists</p>
+            
+      
+        </li>
+            <li className="nav-playlistbtn">
+            
+                <p className='nav-play'>Podcasts</p>
+                
+          
+            </li>
+          </ul>
+  </div>
 </ul>
+<div>
+          <ul className="p-item">
+  <li className="p-item-item">
+    <a href="/">
+      <img src="./img/tech spot.png" alt="Genres" className="pod-item" />
+      📌 Technology Podcast
+    </a>
+  </li> 
+  <li className="p-item-item">
+    <a href="/">
+      <img src="./img/daylist.png" alt="Genres" className="pod-item" />
+      📌Daylist
+    </a>
+  </li>
+  <li className="p-item-item">
+    <a href="/">
+      <img src="/img/discover spot.jpeg" alt="Genres" className="pod-item" />
+      Discover Weekly
+    </a>
+  </li>
+  <li className="p-item-item">
+    <a href="/">
+      <img src="./img/spotify repeat.png" alt="Genres" className="pod-item" />
+      On Repeat
+    </a>
+  </li>
+  <li className="p-item-item">
+    <a href="/">
+      <img src="./img/spotify this.jpg" alt="Genres" className="pod-item" />
+      Spotify Discover This
+    </a>
+  </li>
+</ul>
+</div>
+
       </div>
       <div className="main">
         <div className="header">
