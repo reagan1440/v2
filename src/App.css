@@ -686,7 +686,9 @@ font-size: 22px;
 }
 .logo {
   width: 100px;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
+  margin-left: -0px;
+  margin-top: -17px;
 }
 
 .menu {
@@ -740,9 +742,17 @@ font-size: 22px;
   padding: 10px;
   border-radius: 5px;
   border: none;
-  background-color: #282828;
+  background-color: #000; /* Change background color to match Spotify */
   color: #fff;
+  font-size: 14px; /* Adjust font size to match Spotify */
+  font-weight: 300; /* Adjust font weight to match Spotify */
+  outline: none; /* Remove outline on focus */
 }
+
+.search-input::placeholder {
+  color: #b3b3b3; /* Adjust placeholder color to match Spotify */
+}
+
 
 .playlist-container {
   height: 100vh; /* Set a fixed height */
@@ -759,11 +769,22 @@ font-size: 22px;
 .playlist-item {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   padding: 10px;
   background-color: #282828;
   border-radius: 5px;
 }
+.iframe-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Three columns */
+  grid-gap: 20px; /* Spacing between iframes */
+}
+
+.iframe-item {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
 
 /* SpotifyUI.css */
 
@@ -786,6 +807,22 @@ font-size: 22px;
   height: 95%;
   padding: 5px;
 }
+.back-button {
+  position: absolute;
+  top: 10px;
+  left: 120px;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.back-image {
+  width: 20px; /* Adjust size as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+
 
 .playlist-item-details {
   padding-top: 10px; /* Add some space between image and title */
@@ -833,7 +870,7 @@ font-size: 22px;
 .playlist-item-name {
   margin: 0; /* Remove default margin */
   font-weight: bold;
-  text-align: center;
+  text-align: left;
 }
 
 .playlist-item-description {

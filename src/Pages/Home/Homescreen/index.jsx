@@ -6,6 +6,7 @@ import ContactMe from "../ContactMe";
 import Footer from "../Footer";
 import React from 'react';
 import MyPortfolio from '../MyPortfolio';
+import MySongs from '../MySongs';
 
 export default function Home() {
   const [showHeroSection, setShowHeroSection] = useState(false);

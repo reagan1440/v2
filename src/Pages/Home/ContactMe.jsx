@@ -1,7 +1,16 @@
 import React from 'react';
-
+import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function SpotifyUI() {
+  const navigate = useNavigate();
+
+  const goBack = () => {
+    navigate('/');
+  };
+
+  
+
   return (
     <div className="app">
       <div className="sidebar">
@@ -10,12 +19,15 @@ function SpotifyUI() {
           src="https://www.scdn.co/i/_global/twitter_card-default.jpg"
           alt="Spotify Logo"
         />
+            <button className="back-button" onClick={() => navigate('/')}>
+          <img src="./img/Screenshot__58_-removebg-preview.png" alt="Back" />
+        </button>
     <ul className="menu">
   <li className="menu-item active">
-    <a href="/">
-      <img src="./img/Screenshot__54_-removebg-preview.png" alt="Home" className="menu-icon" />
-      Home
-    </a>
+  <Link to="/contact-me">
+            <img src="./img/Screenshot__54_-removebg-preview.png" alt="Home" className="menu-icon" />
+            Home
+          </Link>
   </li>
   <li className="menu-item">
     <a href="/">
@@ -23,12 +35,13 @@ function SpotifyUI() {
       Search
     </a>
   </li>
+
   <li className="menu-item">
-    <a href="/">
-      <img src="./img/library icon.png" alt="Your Library" className="menu-icon" />
-      Your Library
-    </a>
-  </li>
+  <Link to="/my-songs">
+    <img src="./img/library icon.png" alt="Your Library" className="menu-icon" />
+    Reagans Library
+  </Link>
+</li>
   <li className="menu-item">
     <a href="/">
       <img src="./img/new icon.png" alt="Add Playlist" className="menu-icon" />

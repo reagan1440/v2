@@ -2,9 +2,10 @@ import "./App.css";
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./Pages/Home/Navbar";
-import MyPortfolio from './Pages/Home/MyPortfolio'; // Assuming this is the correct import for your portfolio page
+import MyPortfolio from './Pages/Home/MyPortfolio';
 import AboutMe from './Pages/Home/AboutMe';
 import ContactMe from "./Pages/Home/ContactMe";
+import MySongs from './Pages/Home/MySongs'; 
 
 function App() {
   return (
@@ -13,6 +14,8 @@ function App() {
         <Route path="/" element={<MyPortfolio />} />
         <Route path="/about-me" element={<AboutMe />} />
         <Route path="/contact-me" element={<ContactMe />} />
+        <Route path="/my-songs" element={<MySongs />} />
+
         {/* Define other routes as needed */}
       </Routes>
     </Router>
