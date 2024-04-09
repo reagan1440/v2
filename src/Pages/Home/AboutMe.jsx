@@ -28,7 +28,7 @@ function MySongs() {
           </Link>
   </li>
   <li className="menu-item">
-    <a href="/">
+    <a href="/about-me">
       <img src="./img/search icon.png" alt="Search" className="menu-icon" />
       Search
     </a>
@@ -205,6 +205,18 @@ function MySongs() {
       <img src="./img/doc spot.png" alt="Description of the image" height="255" width="300"/>
     </section>
   </a>
+</div>
+<div class="random-class-1">
+  <ul class='random-class-2'>
+    <li class='random-class-3'>
+    <h3 class='random-class-40'>Now Playing</h3>
+      <img className='dev-cut' src="./img/rea spot.png" alt="Image Description"/>
+      <h3 class='random-class-4'>Developers Cut</h3>
+      <p class='random-class-5'>Software engineer | experience in JavaScript, React, HTML, CSS, MySQL, Insomnia, MongoDB and more | Contributed to 22+ successful web applications | Freelance Developer</p>
+      <img src="./img/Screenshot__63_-removebg-preview.png" alt="Image Description"/>
+    </li>
+
+  </ul>
 </div>
 
 
