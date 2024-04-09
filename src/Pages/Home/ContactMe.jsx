@@ -200,62 +200,69 @@ function SpotifyUI() {
               </div>
             </div>
             <h2 className="section-title">Other Skills</h2>
-<div className="playlist-items">
-  <div className="other-skills-container">
-    <div className="playlist-item other-skills-item">
-      <div className="other-skills-item-container">
-        <div className="playlist-item-image-other-skills-item-img">
-          <img 
+            <div className="recommended-skills-item">
+      <div className="recommended-item-container">
+      <div className="playlist-item other-skills-item">
+        <div className="recommended-image-other-skills-item-img">
+          <img
             src="./img/node spot.png"
-            alt="Playlist"
+            alt="recommended"
           />
-        </div>
-        <div className="playlist-item-details">
+           <div className="playlist-item-details">
           <p className="playlist-item-name">Node.js</p>
         </div>
-      </div>
-    </div>
-    <div className="playlist-item other-skills-item">
-      <div className="other-skills-item-container">
-        <div className="playlist-item-image-other-skills-item-img">
-          <img
-            src="./img/css spot.png"
-            alt="Playlist"
-          />
         </div>
-        <div className="playlist-item-details">
-          <p className="playlist-item-name">CSS</p>
         </div>
       </div>
-    </div>
-    <div className="playlist-item other-skills-item">
-      <div className="other-skills-item-container">
-        <div className="playlist-item-image-other-skills-item-img">
+    </div>  
+    <div className="recommended-skills-item">
+      <div className="recommended-item-container">
+      <div className="playlist-item other-skills-item">
+        <div className="recommended-image-other-skills-item-img">
           <img
             src="./img/html spot.png"
-            alt="Playlist"
+            alt="recommended"
           />
-        </div>
-        <div className="playlist-item-details">
+           <div className="playlist-item-details">
           <p className="playlist-item-name">HTML</p>
         </div>
+        </div>
+        </div>
       </div>
-    </div>
-    <div className="playlist-item other-skills-item">
-      <div className="other-skills-item-container">
-        <div className="playlist-item-image-other-skills-item-img">
+    </div>  
+    <div className="recommended-skills-item">
+      <div className="recommended-item-container">
+      <div className="playlist-item other-skills-item">
+        <div className="recommended-image-other-skills-item-img">
+          <img
+            src="./img/css spot.png"
+            alt="recommended"
+          />
+           <div className="playlist-item-details">
+          <p className="playlist-item-name">CSS</p>
+        </div>
+        </div>
+        </div>
+      </div>
+    </div>  
+    <div className="recommended-skills-item">
+      <div className="recommended-item-container">
+      <div className="playlist-item other-skills-item">
+        <div className="recommended-image-other-skills-item-img">
           <img
             src="./img/bootstrap spot.png"
-            alt="Playlist"
+            alt="recommended"
           />
+           <div className="playlist-item-details">
+          <p className="playlist-item-name">Bootstrap</p>
         </div>
-        <div className="playlist-item-details">
-          <p className="playlist-item-name">BootStrap</p>
+        </div>
         </div>
       </div>
-    </div>
-  </div>
-</div>
+    </div>  
+
+
+
 
             <h2 className="section-title">Recommended</h2>
             <div className="recommended-section">
@@ -335,6 +342,28 @@ function SpotifyUI() {
         <div className="recommended-image-other-skills-item-img">
           <img
             src="./img/_tail spot.png"
+            alt="recommended"
+          />
+        </div>
+      </div>
+    </div>
+
+    <h2 className="section-title">Other Tools</h2>
+    <div className="recommended-skills-item">
+      <div className="recommended-item-container">
+        <div className="recommended-image-other-skills-item-img">
+          <img
+            src="./img/version spot.png"
+            alt="recommended"
+          />
+        </div>
+      </div>
+    </div>
+    <div className="recommended-skills-item">
+      <div className="recommended-item-container">
+        <div className="recommended-image-other-skills-item-img">
+          <img
+            src="./img/vs heroku spot.png"
             alt="recommended"
           />
         </div>
