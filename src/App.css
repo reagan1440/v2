@@ -803,13 +803,18 @@ font-size: 22px;
 .other-skills-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* Span 4 items across */
-  gap: 15px; /* Adjust the gap between items */
+  gap: 10px; /* Adjust the gap between items */
+  width: 40%; /* 4 items per row with 20px gap in between */
+  margin-right: 0px; /* Adjust the gap between items */
+  margin-bottom: 0px; /* Adjust the gap below each row */
+  vertical-align: top; /* Align items to the top of the row */
+  box-sizing: border-box;
 }
 .other-skills-item {
   width: calc(100%); /* Subtract padding from width */
   padding: 10px; /* Add padding to create space between items */
   box-sizing: border-box;
-  padding: 10px; /* Include padding in the width calculation */
+
 }
 
 .other-skills-item-container {
@@ -818,6 +823,7 @@ font-size: 22px;
   align-items: center;
   height: 95%;
   padding: 5px;
+  
 }
 .back-button {
   position: absolute;
@@ -859,18 +865,32 @@ font-size: 22px;
   margin-top: 30px;
 }
 
-.recommended-section {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
+/* Recommended Skills CSS */
+.recommended-skills-item {
+  /* Adjust the size and spacing of each skill item */
+  width: calc(25% - 20px); /* 4 items per row with 20px gap in between */
+  margin-right: 20px; /* Adjust the gap between items */
+  margin-bottom: 20px; /* Adjust the gap below each row */
+  display: inline-block; /* Display items in a row */
+  vertical-align: top; /* Align items to the top of the row */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
-.recommended-item {
-  width: calc(33.33% - 10px);
-  background-color: #282828;
-  padding: 10px;
-  border-radius: 50px;
+
+.recommended-image-other-skills-item-img img {
+  /* Adjust the size of the image */
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* Add border radius for rounded corners */
 }
+.playlist-item-image-other-skills-item {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 5px;
+  
+}
+
 .nav-play {
   width: 100%; /* Ensure the image fills its container */
   background-color: #282828;

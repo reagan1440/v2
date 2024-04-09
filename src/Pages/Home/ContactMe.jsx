@@ -205,7 +205,7 @@ function SpotifyUI() {
     <div className="playlist-item other-skills-item">
       <div className="other-skills-item-container">
         <div className="playlist-item-image-other-skills-item-img">
-          <img
+          <img 
             src="./img/node spot.png"
             alt="Playlist"
           />
@@ -260,15 +260,88 @@ function SpotifyUI() {
             <h2 className="section-title">Recommended</h2>
             <div className="recommended-section">
               {/* Recommended items */}
-              <div className="recommended-item">
-                <p>Recommended 1</p>
-              </div>
-              <div className="recommended-item">
-                <p>Recommended 2</p>
-              </div>
-              <div className="recommended-item">
-                <p>Recommended 3</p>
-              </div>
+    <div className="recommended-skills-item">
+      <div className="recommended-item-container">
+        <div className="recommended-image-other-skills-item-img">
+          <img
+            src="./img/oop spot.png"
+            alt="recommended"
+          />
+        </div>
+      </div>
+    </div>
+    <div className="recommended-skills-item">
+      <div className="recommended-item-container">
+        <div className="recommended-image-other-skills-item-img">
+          <img
+            src="./img/orm spot.png"
+            alt="recommended"
+          />
+        </div>
+      </div>
+    </div>
+    <div className="recommended-skills-item">
+      <div className="recommended-item-container">
+        <div className="recommended-image-other-skills-item-img">
+          <img
+            src="./img/express spot.png"
+            alt="recommended"
+          />
+        </div>
+      </div>
+    </div>
+    <div className="recommended-skills-item">
+      <div className="recommended-item-container">
+        <div className="recommended-image-other-skills-item-img">
+          <img
+            src="./img/state spot.png"
+            alt="recommended"
+          />
+        </div>
+      </div>
+    </div>
+    <div className="recommended-skills-item">
+      <div className="recommended-item-container">
+        <div className="recommended-image-other-skills-item-img">
+          <img
+            src="./img/pwa spot.png"
+            alt="recommended"
+          />
+        </div>
+      </div>
+    </div>
+    <div className="recommended-skills-item">
+      <div className="recommended-item-container">
+        <div className="recommended-image-other-skills-item-img">
+          <img
+            src="./img/_tail spot (1).png"
+            alt="recommended"
+          />
+        </div>
+      </div>
+    </div>
+    <div className="recommended-skills-item">
+      <div className="recommended-item-container">
+        <div className="recommended-image-other-skills-item-img">
+          <img
+            src="./img/_mvc spot.png"
+            alt="recommended"
+          />
+        </div>
+      </div>
+    </div>
+    <div className="recommended-skills-item">
+      <div className="recommended-item-container">
+        <div className="recommended-image-other-skills-item-img">
+          <img
+            src="./img/_tail spot.png"
+            alt="recommended"
+          />
+        </div>
+      </div>
+    </div>
+
+              
             </div>
           </div>
         </div>
