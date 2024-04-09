@@ -29,7 +29,7 @@ function SpotifyUI() {
           </Link>
   </li>
   <li className="menu-item">
-    <a href="/">
+    <a href="/about-me">
       <img src="./img/search icon.png" alt="Search" className="menu-icon" />
       Search
     </a>

@@ -370,56 +370,69 @@ font-size: 22px;
 }
 /* Hero Section Style Ends */
 
+/* side nav */
+
+
 
 /* About Us */
-.container {
-  display: flex;
+.section-title {
+  padding-bottom: 20px;
+}
+.card-container {
+  height: 267px; /* Set the height to match the height of the image */
+  display: inline-block; /* Make sure each container occupies the minimum width required */
+  margin-right: -15px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px; /* Adjust the gap between cards as needed */
+  justify-content: center;
+  padding: 0px; /* Adds some padding around the grid for better spacing */
 }
 
-.navbar {
-  width: 8000px; /* Adjust as needed */
-  height: 80px;
+.card-container:last-child {
+  margin-right: 0; /* Remove margin for the last card to prevent extra space */
 }
 
-.navbar ul {
-  list-style-type: none;
-  padding: 0;
+
+.card {
+  height: auto;
+  width: 100%;
+  max-width: 100%;
 }
 
-.navbar li {
-  margin-bottom: 10px;
-}
-
-.main-content {
+.card-content {
+  position: relative;
+  width: 90%; /* Adjusts the width to fit the grid column */
+  height: 250px; /* Keeps your defined height */
+  background-color: #f2f2f2;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-grow: 1;
+  overflow: hidden;
+  perspective: 1000px;
+  transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-
-.video {
-  margin-right: 160px;
-  margin-top: 140px;
-}
-
-.images {
+.card-container .card-content {
   display: flex;
-  flex-wrap: wrap;
-  margin-top: 20px;
-  flex-direction: column;
-  margin-left: 160px;
+  align-items: flex-start; /* Align content to the top */
 }
 
-.image {
-  margin-right: 10px;
-  margin-bottom: 10px;
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px #000000;
+  background-color: #0c0808;
+  color: #ffffff;
 }
 
-.image img {
-  width: 100px; /* Adjust image size as needed */
-  height: auto;
-  grid-template-columns: repeat(1, 2fr);
+.card__content {
+  color: #000000;
 }
+
+.card__link {
+  text-decoration: none;
+  color: inherit;
+}
+
 
 
 
