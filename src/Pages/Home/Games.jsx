@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-// Games component
 function Games() {
   const navigate = useNavigate();
 
@@ -12,58 +11,47 @@ function Games() {
 
   return (
     <div>
-      <h1>Games Component</h1>
       <button onClick={goBack}>Go Back</button>
-      <NumberGuessingGame />
-    </div>
-  );
-}
-
-// NumberGuessingGame component
-function NumberGuessingGame() {
-  const [guess, setGuess] = useState('');
-  const [randomNumber, setRandomNumber] = useState(generateRandomNumber());
-  const [message, setMessage] = useState('');
-
-  function generateRandomNumber() {
-    return Math.floor(Math.random() * 100) + 1; // Generates a random number between 1 and 100
-  }
-
-  function handleInputChange(event) {
-    setGuess(event.target.value);
-  }
-
-  function handleGuess() {
-    const userGuess = parseInt(guess);
-
-    if (isNaN(userGuess)) {
-      setMessage('Please enter a valid number.');
-    } else if (userGuess === randomNumber) {
-      setMessage('Congratulations! You guessed the correct number.');
-    } else if (userGuess < randomNumber) {
-      setMessage('Too low! Try a higher number.');
-    } else {
-      setMessage('Too high! Try a lower number.');
-    }
-  }
-
-  function handleReset() {
-    setGuess('');
-    setRandomNumber(generateRandomNumber());
-    setMessage('');
-  }
-
-  return (
-    <div>
-      <h1>Number Guessing Game</h1>
-      <p>Guess a number between 1 and 100:</p>
-      <input type="number" value={guess} onChange={handleInputChange} />
-      <button onClick={handleGuess}>Guess</button>
-      <button onClick={handleReset}>Reset</button>
-      {message && <p>{message}</p>}
+      <div className="portfolio">
+        <header>
+          <h1>My Portfolio</h1>
+        </header>
+        <section id="about">
+          <h2>About Me</h2>
+          <p>I am a passionate developer with a keen interest in creating innovative solutions.</p>
+        </section>
+        <section id="projects">
+          <h2>Projects</h2>
+          <div className="project">
+            <h3>Project 1</h3>
+            <p>Description of Project 1</p>
+          </div>
+          <div className="project">
+            <h3>Project 2</h3>
+            <p>Description of Project 2</p>
+          </div>
+          {/* Add more project sections as needed */}
+        </section>
+        <section id="contact">
+          <h2>Contact Me</h2>
+          <form>
+            <label htmlFor="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+            <label htmlFor="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+            <label htmlFor="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit">Send</button>
+          </form>
+        </section>
+        <footer>
+          <p>&copy; 2024 My Portfolio</p>
+        </footer>
+      </div>
     </div>
   );
 }
 
 export default Games;
+
 

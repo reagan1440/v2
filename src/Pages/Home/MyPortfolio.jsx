@@ -1,8 +1,18 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 function MyPortfolio() {
   let navigate = useNavigate();
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowWidth(window.innerWidth);
+    }
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   const navigateToGames = () => {
     navigate('/games');
@@ -13,7 +23,7 @@ function MyPortfolio() {
   };
 
   const divStyle = {
-    backgroundImage: 'url("./img/port back.png")',
+    backgroundImage: 'url("./img/hopefullyfinalbg.png")',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     minHeight: '100vh',
@@ -29,16 +39,18 @@ function MyPortfolio() {
     height: '50px',
     position: 'absolute',
     top: '580px',
-    right: '500px',
+    left: '350px',
   };
 
   const contactButtonStyle = {
     cursor: 'pointer',
-    width: '50px',
-    height: '50px',
+    width: '100px',
+    height: '100px',
     position: 'absolute',
-    top: '350px',
-    right: '320px', // Adjust placement as needed
+    top: '400px',
+    left: '320px', // Adjust placement as needed
+    left: windowWidth > 768 ? '320px' : '50%', // Adjusts based on screen width
+    transform: windowWidth > 768 ? 'translateX(0)' : 'translateX(-500%)',
   };
 
   const imageContainerStyle = {
@@ -56,29 +68,24 @@ function MyPortfolio() {
   };
 
   const imageStyle1 = {
-    width: '50px',
+    width: '60px',
     height: 'auto',
-    marginBottom: '15px',
+    marginBottom: '35px',
+    marginLeft: '10px',
   };
 
   const imageStyle2 = {
-    width: '320px',
+    width: '60px',
     height: 'auto',
     marginTop: '-20px',
-  };
-
-  const imageStyle3 = {
-    width: '50px',
-    height: 'auto',
-    marginTop: '-20px',
-    marginLeft: '80px'
+    marginLeft: '160px',
   };
 
   const imageStyle4 = {
-    width: '50px',
+    width: '60px',
     height: 'auto',
-    marginTop: '-10px',
-    marginLeft: '100px'
+    marginTop: '-30px',
+    marginLeft: '160px'
   };
 
   const errorStyle = {
@@ -86,6 +93,19 @@ function MyPortfolio() {
     marginTop: '-50px',
     marginLeft: '-20px',
   }
+   const  imageStyle5 = {
+    width: '60px',
+    height: 'auto',
+    marginLeft: '70px',
+    marginTop: '10px',
+   }
+
+   const imageStyle6 = {
+    width: '60px',
+    height: 'auto',
+    marginTop: '20px',
+    marginLeft: '10px',
+   }
 
   const images = [
     {
@@ -96,17 +116,17 @@ function MyPortfolio() {
     {
       src: './img/note icon.png',
       alt: 'Image 2',
-      style: imageStyle3,
+      style: imageStyle2,
     },
     {
       src: './img/globe icon.png',
       alt: 'Image 3',
-      style: imageStyle1,
+      style: imageStyle5,
     },
     {
       src: './img/computer icon.png',
       alt: 'Image 4',
-      style: imageStyle1,
+      style: imageStyle6,
     },
     {
       src: './img/5ceb85ff937c7fcef5dabf6168f1b7ec-removebg-preview.png',
@@ -131,10 +151,11 @@ function MyPortfolio() {
         onClick={navigateToGames}
         style={buttonStyle}
       />
+  
 
       {/* New button for contact */}
       <img
-        src="./img/desktop folder.png"
+        src="./img/sticky_note__1_-removebg-preview (1).png"
         alt="Contact-Button"
         onClick={navigateToContactMe}
         style={contactButtonStyle}
