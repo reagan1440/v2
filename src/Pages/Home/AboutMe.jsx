@@ -121,18 +121,18 @@ function MySongs() {
         </div>
         <div className="content">
           <h2 className='section-title'> My Projects </h2>
-
-          <div class="card-container">
-  <a href="https://stark-coast-30123-1fdb6d955941.herokuapp.com/" class="card">
-    <section id="card1" class="card-content">
-      <img src="./img/sidebar.png" alt="Description of the image" height="255" width="300"/>
-    </section>
-  </a>
-</div>
 <div class="card-container">
   <a href="https://roomeo-54bd0cc57e2b.herokuapp.com/" class="card">
     <section id="card2" class="card-content">
       <img src="./img/roomeo spot.png" alt="Description of the image" height="255" width="300"/>
+    </section>
+  </a>
+</div>
+
+<div class="card-container">
+  <a href="https://stark-coast-30123-1fdb6d955941.herokuapp.com/" class="card">
+    <section id="card1" class="card-content">
+      <img src="./img/sidebar.png" alt="Description of the image" height="255" width="300"/>
     </section>
   </a>
 </div>
@@ -212,7 +212,7 @@ function MySongs() {
     <h3 class='random-class-40'>Now Playing</h3>
       <img className='dev-cut' src="./img/rea spot.png" alt="Image Description"/>
       <h3 class='random-class-4'>Developers Cut</h3>
-      <p class='random-class-5'>Software engineer | experience in JavaScript, React, HTML, CSS, MySQL, Insomnia, MongoDB and more | Contributed to 22+ successful web applications | Freelance Developer</p>
+      <p class='random-class-5'>Software engineer</p>
       <img src="./img/Screenshot__63_-removebg-preview.png" alt="Image Description"/>
     </li>
 

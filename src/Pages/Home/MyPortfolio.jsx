@@ -4,8 +4,8 @@ import { useNavigate } from 'react-router-dom';
 function MyPortfolio() {
   let navigate = useNavigate();
 
-  const navigateToAboutMe = () => {
-    navigate('/about-me');
+  const navigateToGames = () => {
+    navigate('/games');
   };
 
   const navigateToContactMe = () => {
@@ -13,7 +13,7 @@ function MyPortfolio() {
   };
 
   const divStyle = {
-    backgroundImage: 'url("./img/Welcome to (3).png")',
+    backgroundImage: 'url("./img/port back.png")',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     minHeight: '100vh',
@@ -28,7 +28,7 @@ function MyPortfolio() {
     width: '50px',
     height: '50px',
     position: 'absolute',
-    top: '180px',
+    top: '580px',
     right: '500px',
   };
 
@@ -38,7 +38,7 @@ function MyPortfolio() {
     height: '50px',
     position: 'absolute',
     top: '350px',
-    right: '80px', // Adjust placement as needed
+    right: '320px', // Adjust placement as needed
   };
 
   const imageContainerStyle = {
@@ -67,6 +67,26 @@ function MyPortfolio() {
     marginTop: '-20px',
   };
 
+  const imageStyle3 = {
+    width: '50px',
+    height: 'auto',
+    marginTop: '-20px',
+    marginLeft: '80px'
+  };
+
+  const imageStyle4 = {
+    width: '50px',
+    height: 'auto',
+    marginTop: '-10px',
+    marginLeft: '100px'
+  };
+
+  const errorStyle = {
+    width: '480px',
+    marginTop: '-50px',
+    marginLeft: '-20px',
+  }
+
   const images = [
     {
       src: './img/trash icon.png',
@@ -76,7 +96,7 @@ function MyPortfolio() {
     {
       src: './img/note icon.png',
       alt: 'Image 2',
-      style: imageStyle1,
+      style: imageStyle3,
     },
     {
       src: './img/globe icon.png',
@@ -91,12 +111,12 @@ function MyPortfolio() {
     {
       src: './img/5ceb85ff937c7fcef5dabf6168f1b7ec-removebg-preview.png',
       alt: 'Image 5',
-      style: imageStyle1,
+      style: imageStyle4,
     },
     {
       src: './img/error-removebg-preview.png',
       alt: 'Error',
-      style: imageStyle2,
+      style: errorStyle,
       width: '120px',
       height: 'auto',
     },
@@ -107,15 +127,15 @@ function MyPortfolio() {
       {/* Image acting as a button */}
       <img
         src="./img/desktop folder.png"
-        alt="Button"
-        onClick={navigateToAboutMe}
+        alt="Contact-ButtonBoring"
+        onClick={navigateToGames}
         style={buttonStyle}
       />
 
       {/* New button for contact */}
       <img
         src="./img/desktop folder.png"
-        alt="Contact Button"
+        alt="Contact-Button"
         onClick={navigateToContactMe}
         style={contactButtonStyle}
       />

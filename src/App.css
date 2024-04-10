@@ -211,164 +211,7 @@ font-size: 22px;
 
 /* Navbar Styler Ends */
 
-/* Hero Section Style */
 
-.hero--video {
-  position: absolute; /* Position the video absolutely to overlay it on the image */
-  top: 50px;
-  left: 40px;
-  width: 65%;
-  height: 55%;
-  object-fit: cover; /* Cover the entire area of the container */
-  z-index: 1;
-}
-
-@media screen and (min-width: 768px) {
-  /* Apply styles for screens wider than 768px */
-  .hero--video {
-    top: 100px; /* Adjust top position for larger screens */
-    left: 60px; /* Adjust left position for larger screens */
-    width: 60%; /* Adjust width for larger screens */
-    height: 50%; /* Adjust height for larger screens */
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  /* Apply styles for screens wider than 1024px */
-  .hero--video {
-    top: 70px; /* Further adjust top position for larger screens */
-    left: 70px; /* Further adjust left position for larger screens */
-    width: 65%; /* Further adjust width for larger screens */
-    height: 50%; /* Further adjust height for larger screens */
-  }
-}
-
-.ai-image {
-  width: 140%; /* Make the image fill the div */
-  height: auto; /* Maintain aspect ratio */
-  min-width: 140%;
-  width: 90%; /* Make the image fill the div */ 
-  height: auto; /* Maintain aspect ratio */
-  min-width: 120%;
-  display: block; /* Ensure the image is treated as a block element */
-  padding-left: -10px;
-  margin: 7px;
-}
-
-
-.second-image {
-  position: absolute; /* Position the video absolutely to overlay it on the image */
-  bottom: 15px; /* Adjust as needed */
-  left: 90px; /* Adjust as needed */
-  width: 40%; /* Adjust the width of the second image */
-  height: auto; /* Maintain aspect ratio */
-  max-width: 35%; /* Make sure it doesn't exceed the container width */
-  max-height: 35%;
-  padding-bottom: 20px;
-}
-.third-image {
-  position: absolute; /* Position the video absolutely to overlay it on the image */
-  top: 18px; /* Adjust as needed */
-  left: 93px; /* Adjust as needed */
-  width: 40%; /* Adjust the width of the second image */
-  height: auto; /* Maintain aspect ratio */
-  max-width: 33%; /* Make sure it doesn't exceed the container width */
-  max-height: 27%;
-  padding-top: 13px;
-}
-.fourth-image  {
-  position: absolute;
-  top: 230px; /* Adjust as needed */
-  left: 90px;
-  width: 35%;
-  height: auto;
-  max-width: 37%;
-  max-height: 100%;
-  padding-top: 10px; /* Adjust as needed */
-}
-
-
-.btn-bottom-right {
-  position: absolute;
-  bottom: 110px;
-  right: 65px;
-
-}
-.btn-resume {
-  position: absolute;
-  bottom: 70px;
-  right: 65px;
-  font-family: "Roboto";
-  display: inline-block;
-  padding: 10px 15px;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 4px;
-  background-color: var(--primary);
-  color: white;
-}
-
-.btn-resume:hover {
-  color: var(--primary); /* Change text color on hover */
-}
-.btn-resume a:hover {
-  color: var(--primary)
-}
-.btn-resume a {
-  color: white;
-}
-
-.hero--section--content-box {
-  display: cover;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 32px;
-}
-.hero--section--content {
-  display: cover;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-.hero--section--content--box > button {
-  margin-top: 21.333px;
-}
-
-.section--title{
-  color: #41495b;
-  border-color: white;
-  font-size: 45.667px;
-  font-weight: 700;
-  line-height: 90px;
-  align-self: stretch;
-  padding-top: 22px;
-}
-.hero--section-description {
-  color: #a07143;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 36px;
-}
-.hero--section--img {
-  width: 80%; /* Make the image fill the div */
-  height: auto; /* Maintain aspect ratio */
-  max-width: 100%;
-  width: 100%; /* Adjust based on how much of the container it should fill */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-.hero--section--img > img {
-  width: 100%;
-  height: 100%;
-}
-/* Hero Section Style Ends */
 
 /* side nav */
 .random-class-1 {
@@ -399,7 +242,7 @@ font-size: 22px;
 }
 .random-class-40 {
   margin-bottom: 20px;
-  margin-top: 220px
+  margin-top: 273px
 }
 
 .random-class-5 {
@@ -489,150 +332,8 @@ font-size: 22px;
   }
 }
 
-/* Portfolio */
-.portfolio--section {
-  display: flex;
-  padding: 112px 85px;
-  flex-direction: column;
-  align-items: center; /* Align center for better presentation */
-  gap: 80px;
-  background-color: #43455f;;
-}
-.portfolio--container-box {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-.portfolio--container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-.portfolio--section--container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 40px; 
-  width: 100%;
-  background-color: #575a75;
-  padding-top: 40px;
-}
-.portfolio--section--img {
-  border-radius: 12px 12px 0 0; 
-  overflow: hidden;
-  height: 180px;
-}
-.portfolio--section--img > img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; 
-  border-radius: 12px 12px 0 0; 
-}
-.portfolio--section--card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  background: hsl(232,17%,17%);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  border-radius: 12px;
-  width: 100%;
-  max-width: 300px;
-  overflow: hidden;
-}
-.text-sm-portfolio--link {
-  text-decoration: none;
-  display: inline-block;
-  padding: 10px 20px; 
-  border: 2px solid var(--primary); 
-  border-radius: 6px;
-  font-size: 0.875rem; 
-  font-weight: 600;
-  color: var(--primary); 
-  transition: all 0.3s ease; 
-  background-color: #73576e;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  position: relative;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-}
 
-.text-sm-portfolio--link:hover {
-  background-color: var(--primary); 
-  color: #fff; 
-}
 
-.portfolio--section--card--content {
-  padding: 20px;
-}
-.portfolio--section--title {
-  margin-bottom: 10px;
-  font-size: 1.5rem;
-  color: white;
-}
-.text-md {
-  font-size: 1rem;
-  color: white;
-}
-.portfolio--link {
-  text-decoration: none;
-  display: flex;
-  gap: 16px;
-  border-bottom: 1.33px solid var(--primary);
-  padding-bottom: 10.6px;
-  font-weight: 600;
-}
-.portfolio--section--card:hover path {
-  stroke: black;
-}
-.testimonial--section {
-  display: flex;
-  padding: 112px 84.3px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 80px;
-  background-color: var(--bg-shade);
-}
-.sections--heading {
-  color: var(--heading-color);
-}
-.testimonial--section--card {
-  display: flex;
-  padding: 42.6px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 42.6px;
-  flex: 1 0 0;
-  border-radius: 8px;
-  border: 1.33px solid #006b6a;
-}
-.testimonial--section--card--reviews {
-  display: flex;
-  align-items: flex-start;
-  gap: 5.33px;
-}
-.testimonial--section--card--author--detail {
-  display: flex;
-  align-items: center;
-  gap: 21.3px;
-}
-.testimonial--author--name {
-  font-weight: 600;
-  color: var(--heading-color);
-}
-.testimonial--author--designation {
-  color: var(--darkblue);
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 150%;
-}
 /* spotify */
 .app {
   display: flex;
@@ -943,6 +644,9 @@ font-size: 22px;
 .playlist-item-description {
   color: #b3b3b3;
 }
+
+/* contact button? */
+
 
 /* media screens */
 @media only screen and (max-width: 1800px) {
