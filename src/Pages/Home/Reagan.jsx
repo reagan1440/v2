@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-function Games() {
+function Reagan() {
   const navigate = useNavigate();
 
   // Function to navigate back to home
@@ -170,4 +170,4 @@ function Games() {
   );
 }
 
-export default Games;
+export default Reagan;

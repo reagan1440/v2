@@ -12,8 +12,8 @@ export function SomeComponent() {
     navigate('/my-songs');
   };
 
-  const goToGames = () => {
-    navigate('/games');
+  const goToReagan = () => {
+    navigate('/reagan');
   }
 
   return (
@@ -21,7 +21,7 @@ export function SomeComponent() {
       {/* Content of your component */}
       <button onClick={goBackToAboutMe}>Back to About Me</button>
       <button onClick={goToMySongs}>Go to My Songs</button>
-      <button onClick={goToGames}>Go to games </button>
+      <button onClick={goToReagan}>Go to Reagan </button>
     </div>
   );
 }

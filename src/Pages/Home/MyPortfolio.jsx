@@ -14,8 +14,8 @@ function MyPortfolio() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  const navigateToGames = () => {
-    navigate('/games');
+  const navigateToReagan = () => {
+    navigate('/reagan');
   };
 
   const navigateToContactMe = () => {
@@ -148,16 +148,16 @@ function MyPortfolio() {
     <div style={divStyle}>
       {/* Image acting as a button */}
       <img
-        src="./img/skiliify-code-removebg-preview.png"
+        src="./img/v.1-code-removebg-preview.png"
         alt="Contact-ButtonBoring"
-        onClick={navigateToGames}
+        onClick={navigateToReagan}
         style={buttonStyle}
       />
   
 
       {/* New button for contact */}
       <img
-        src="./img/v.1-code-removebg-preview.png"
+        src="./img/skiliify-code-removebg-preview.png"
         alt="Contact-Button"
         onClick={navigateToContactMe}
         style={contactButtonStyle}
