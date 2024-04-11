@@ -478,6 +478,7 @@ font-size: 22px;
 
 
 .project-description {
+   flex: 1;
   background-color: #435872;; /* Light grey background */
   padding: 20px; /* Add padding around each project description */
   border-radius: 8px; /* Add rounded corners */
@@ -787,6 +788,7 @@ font-size: 22px;
 }
 
 .playlist-items {
+   flex: 1;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;

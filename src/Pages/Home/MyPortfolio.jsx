@@ -71,22 +71,23 @@ function MyPortfolio() {
   const imageStyle1 = {
     width: '60px',
     height: 'auto',
-    marginBottom: '35px',
-    marginLeft: '10px',
+    marginBottom: '-15px',
+    marginLeft: '50px',
   };
 
   const imageStyle2 = {
-    width: '60px',
+    width: '90px',
     height: 'auto',
     marginTop: '-20px',
     marginLeft: '160px',
   };
 
   const imageStyle4 = {
-    width: '60px',
+    width: '70px',
     height: 'auto',
-    marginTop: '-30px',
-    marginLeft: '160px'
+    marginTop: '-90px',
+    marginLeft: '160px',
+    paddingBottom: '50px'
   };
 
   const errorStyle = {
@@ -95,19 +96,20 @@ function MyPortfolio() {
     marginLeft: '-20px',
   }
    const  imageStyle5 = {
-    width: '60px',
+    width: '90px',
     height: 'auto',
     marginLeft: '70px',
     marginTop: '10px',
    }
 
    const imageStyle6 = {
-    width: '60px',
+    width: '90px',
     height: 'auto',
     marginTop: '20px',
     marginLeft: '10px',
    }
 
+   
   const images = [
     {
       src: './img/trash icon.png',
@@ -116,18 +118,20 @@ function MyPortfolio() {
       link: 'https://www.linkedin.com/in/reagan-lowe-013764290/'
     },
     {
-      src: './img/note icon.png',
+      src: './img/linkedin-code-removebg-preview.png',
       alt: 'Image 2',
       style: imageStyle2,
     },
     {
-      src: './img/globe icon.png',
+      src: './img/resume-code-removebg-preview.png',
       alt: 'Image 3',
       style: imageStyle5,
+      href: "https://docs.google.com/document/d/1P8SPYDx4JpSWeVSNrZrFGdGvF2WPbHjAwIc7kPw10Ks/edit?usp=sharing"
     },
     {
-      src: './img/computer icon.png',
+      src: './img/contact-code-removebg-preview (1).png',
       alt: 'Image 4',
+      href: 'mailto:reaganrl14@gmail.com',
       style: imageStyle6,
     },
     {
@@ -168,16 +172,27 @@ function MyPortfolio() {
   {/* Render existing images */}
   {images.slice(0, 5).map((image, index) => (
     <div key={index}>
-      <a href={image.link} target="_blank" rel="noopener noreferrer">
-        <img
-          src={image.src}
-          alt={image.alt}
-          style={image.style}
-        />
-      </a>
+      {image.href ? ( // Check if a mailto link is provided
+        <a href={image.href}>
+          <img
+            src={image.src}
+            alt={image.alt}
+            style={image.style}
+          />
+        </a>
+      ) : (
+        <a href={image.link} target="_blank" rel="noopener noreferrer">
+          <img
+            src={image.src}
+            alt={image.alt}
+            style={image.style}
+          />
+        </a>
+      )}
     </div>
   ))}
 </div>
+
 
 {/* Image container for new images */}
 <div style={imageContainerStyle2}>

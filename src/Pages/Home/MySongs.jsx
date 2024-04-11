@@ -41,19 +41,19 @@ function MySongs() {
   </Link>
 </li>
   <li className="menu-item">
-    <a href="/">
+    <a href="/my-songs">
       <img src="./img/new icon.png" alt="Add Playlist" className="menu-icon" />
       Add Playlist
     </a>
   </li>
   <li className="menu-item">
-    <a href="/">
+    <a href="/my-songs">
       <img src="./img/likedsongs.jpg" alt="Liked Songs" className="menu-icon" />
       Liked Songs
     </a>
   </li>
   <li className="menu-item">
-    <a href="/">
+    <a href="/my-songs">
       <img src="./img/Screenshot (55).png" alt="Genres" className="menu-icon" />
       Saved Episodes
     </a>
@@ -78,31 +78,31 @@ function MySongs() {
 <div>
           <ul className="p-item">
   <li className="p-item-item">
-    <a href="/">
+    <a href="/my-songs">
       <img src="./img/tech spot.png" alt="Genres" className="pod-item" />
       📌 Technology Podcast
     </a>
   </li> 
   <li className="p-item-item">
-    <a href="/">
+    <a href="/my-songs">
       <img src="./img/daylist.png" alt="Genres" className="pod-item" />
       📌Daylist
     </a>
   </li>
   <li className="p-item-item">
-    <a href="/">
+    <a href="/my-songs">
       <img src="/img/discover spot.jpeg" alt="Genres" className="pod-item" />
       Discover Weekly
     </a>
   </li>
   <li className="p-item-item">
-    <a href="/">
+    <a href="/my-songs">
       <img src="./img/spotify repeat.png" alt="Genres" className="pod-item" />
       On Repeat
     </a>
   </li>
   <li className="p-item-item">
-    <a href="/">
+    <a href="/my-songs">
       <img src="./img/spotify this.jpg" alt="Genres" className="pod-item" />
       Spotify Discover This
     </a>
