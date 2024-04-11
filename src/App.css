@@ -333,7 +333,6 @@ font-size: 22px;
 
 
 
-
 /* code card */
 .game-page-code {
   background-color: #435872;
@@ -348,6 +347,7 @@ font-size: 22px;
   z-index: 1;
   box-shadow: 0px 10px 10px rgb(73, 70, 92);
   transition: 0.5s;
+  justify-content: space-evenly;
   
 }
 
@@ -511,12 +511,12 @@ font-size: 22px;
   height: 267px; /* Set the height to match the height of the image */
   display: inline-block; /* Make sure each container occupies the minimum width required */
   margin-right: -10px;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 17px; /* Adjust the gap between cards as needed */
-  justify-content: center;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  justify-content: space-evenly;
   padding: 2px; /* Adds some padding around the grid for better spacing */
   padding-left: 2px ;
   padding-right: 2px;
+  width: auto;
 }
 
 .code-port-container:first-child {
