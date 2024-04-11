@@ -113,6 +113,7 @@ function MyPortfolio() {
       src: './img/trash icon.png',
       alt: 'Image 1',
       style: imageStyle1,
+      link: 'https://www.linkedin.com/in/reagan-lowe-013764290/'
     },
     {
       src: './img/note icon.png',
@@ -162,33 +163,38 @@ function MyPortfolio() {
         style={contactButtonStyle}
       />
 
-      {/* Image container for existing images */}
-      <div style={imageContainerStyle}>
-        {/* Render existing images */}
-        {images.slice(0, 5).map((image, index) => (
-          <div key={index}>
-            <img
-              src={image.src}
-              alt={image.alt}
-              style={image.style}
-            />
-          </div>
-        ))}
-      </div>
+{/* Image container for existing images */}
+<div style={imageContainerStyle}>
+  {/* Render existing images */}
+  {images.slice(0, 5).map((image, index) => (
+    <div key={index}>
+      <a href={image.link} target="_blank" rel="noopener noreferrer">
+        <img
+          src={image.src}
+          alt={image.alt}
+          style={image.style}
+        />
+      </a>
+    </div>
+  ))}
+</div>
 
-      {/* Image container for new images */}
-      <div style={imageContainerStyle2}>
-        {/* Render new images */}
-        {images.slice(5).map((image, index) => (
-          <div key={index}>
-            <img
-              src={image.src}
-              alt={image.alt}
-              style={image.style}
-            />
-          </div>
-        ))}
-      </div>
+{/* Image container for new images */}
+<div style={imageContainerStyle2}>
+  {/* Render new images */}
+  {images.slice(5).map((image, index) => (
+    <div key={index}>
+      <a href={image.link} target="_blank" rel="noopener noreferrer">
+        <img
+          src={image.src}
+          alt={image.alt}
+          style={image.style}
+        />
+      </a>
+    </div>
+  ))}
+</div>
+
     </div>
   );
 }
