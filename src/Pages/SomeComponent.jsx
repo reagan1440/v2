@@ -5,7 +5,7 @@ export function SomeComponent() {
   let navigate = useNavigate();
 
   const goBackToAboutMe = () => {
-    navigate('/AboutMe');
+    navigate('/about-me');
   };
 
   const goToMySongs = () => {
