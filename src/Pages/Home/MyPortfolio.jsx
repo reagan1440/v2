@@ -115,12 +115,12 @@ function MyPortfolio() {
       src: './img/trash icon.png',
       alt: 'Image 1',
       style: imageStyle1,
-      link: 'https://www.linkedin.com/in/reagan-lowe-013764290/'
     },
     {
       src: './img/linkedin-code-removebg-preview.png',
       alt: 'Image 2',
       style: imageStyle2,
+      link: 'https://www.linkedin.com/in/reagan-lowe-013764290/'
     },
     {
       src: './img/resume-code-removebg-preview.png',
@@ -178,6 +178,7 @@ function MyPortfolio() {
             src={image.src}
             alt={image.alt}
             style={image.style}
+            link={image.link}
           />
         </a>
       ) : (
@@ -186,6 +187,7 @@ function MyPortfolio() {
             src={image.src}
             alt={image.alt}
             style={image.style}
+            link={image.link}
           />
         </a>
       )}

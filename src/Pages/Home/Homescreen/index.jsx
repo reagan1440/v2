@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import HeroSection from "../HeroSection";
 import MySkills from "../MySkills";
-import Projects from "../Projects";
+import AboutMe from "../AboutMe";
 import ContactMe from "../ContactMe";
 import Footer from "../Footer";
 import React from 'react';
@@ -22,7 +22,7 @@ export default function Home() {
         <>
           <HeroSection />
           {/* <MySkills /> */}
-          <Projects />
+          <AboutMe />
           {/* <ContactMe /> */}
           <Footer />
         </>
