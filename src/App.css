@@ -211,7 +211,229 @@ font-size: 22px;
 
 /* Navbar Styler Ends */
 
+/* Hero Section Style */
+.hero--section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 133.333px 85.333px 133.333px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  background-color: #242735;
+}
+.btn-bottom-right {
+  position: absolute;
+  bottom: 110px;
+  right: 65px;
 
+}
+.btn-resume {
+  position: absolute;
+  bottom: 70px;
+  right: 65px;
+  font-family: "Roboto";
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  background-color: var(--primary);
+  color: white;
+}
+
+.btn-resume:hover {
+  color: var(--primary); /* Change text color on hover */
+}
+.btn-resume a:hover {
+  color: var(--primary)
+}
+.btn-resume a {
+  color: white;
+}
+
+.hero--section--content-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+.hero--section--content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 21.333px;
+}
+.picture--of--me img {
+  width: 100px;
+  height: auto;
+  margin-left: 350px;
+} 
+.hero--section--content--box > button {
+  margin-top: 21.333px;
+}
+.hero--section--title {
+  color: #41495b;
+  font-size: 74.667px;
+  font-weight: 700;
+  line-height: 90px;
+  align-self: stretch;
+}
+.hero--section--title--color {
+  color: var(--black);
+  font-size: 22px;
+}
+.section--title{
+  color: #41495b;
+  border-color: white;
+  font-size: 45.667px;
+  font-weight: 700;
+  line-height: 90px;
+  align-self: stretch;
+  padding-top: 0px;
+}
+.hero--section-description {
+  color: #a07143;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.hero--section--img {
+  display: flex;
+}
+.hero--section--img > img {
+  width: 80%;
+  height: 80%;
+}
+
+.reagan-nav {
+  background-color: #333; /* Adjust color as needed */
+  padding: 10px;
+}
+
+.reagan-nav button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 20px; /* Adjust spacing as needed */
+}
+
+.reagan-nav button:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section Style Ends */
+
+
+
+
+
+/* code card */
+.game-page-code {
+  background-color: #435872;
+}
+
+.code-card {
+  width: 300px;
+  height: 400px;
+  margin: 0 auto;
+  background-color: #24233b;
+  border-radius: 8px;
+  z-index: 1;
+  box-shadow: 0px 10px 10px rgb(73, 70, 92);
+  transition: 0.5s;
+  
+}
+
+.code-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0px 10px 10px black;
+}
+
+.code-top {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.circle {
+  padding: 0 4px;
+}
+
+.circle2 {
+  display: inline-block;
+  align-items: center;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
+  border-radius: 5px;
+}
+
+.red {
+  background-color: #ff605c;
+}
+
+.yellow {
+  background-color: #ffbd44;
+}
+
+.green {
+  background-color: #00ca4e;
+}
+
+.code-header {
+  margin: 5px;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+#title2 {
+  color: white;
+  padding-left: 50px;
+  font-size: 15px;
+}
+
+.code-card-container {
+  text-align: center;
+}
+#code {
+  width: 270px;
+  height: 350px;
+  resize: none;
+  background-color: rgb(73, 70, 92);
+  border-radius: 5px;
+  border: none;
+  color: white;
+  padding: 10px;
+}
+#code:focus {
+  outline: none !important;
+}
+.code-cards-container {
+  display: flex;
+  justify-content: space-around; /* This will space out the cards evenly. */
+  align-items: start; /* This aligns items to the start of the container, useful if they have different heights. */
+  flex-wrap: wrap; /* Allows the cards to wrap into the next line on smaller screens. */
+}
+
+.code-card {
+  flex-basis: 35%; /* Adjust this value based on your design needs and container size. */
+  /* Add more styling here to suit your design. */
+}
+
+.code-display {
+  color: white;
+}
+
+.code-title {
+  text-align: center;
+}
 
 /* side nav */
 .random-class-1 {
@@ -255,6 +477,96 @@ font-size: 22px;
 }
 
 
+.project-description {
+  background-color: #435872;; /* Light grey background */
+  padding: 20px; /* Add padding around each project description */
+  border-radius: 8px; /* Add rounded corners */
+  margin-bottom: 20px; /* Add some space between each project description */
+  color: white;
+}
+
+.project-description h2 {
+  color: #8a7b7b; /* Dark grey color for the headings */
+}
+
+.project-description p {
+  color: white; /* Lighter grey color for the text */
+  line-height: 1.6; /* Increase line height for readability */
+}
+
+
+/* code port */
+.code-port-description-section {
+  color: white;
+  font-size: 12px;
+  background-color:  #242735;
+  margin-top: 20px;
+}
+
+.code-title {
+  color: white;
+}
+
+.code-port-container {
+  height: 267px; /* Set the height to match the height of the image */
+  display: inline-block; /* Make sure each container occupies the minimum width required */
+  margin-right: -10px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 17px; /* Adjust the gap between cards as needed */
+  justify-content: center;
+  padding: 2px; /* Adds some padding around the grid for better spacing */
+  padding-left: 2px ;
+  padding-right: 2px;
+}
+
+.code-port-container:first-child {
+  margin-right: 0; /* Remove margin for the last card to prevent extra space */
+}
+
+
+.code-port-card {
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+}
+
+.code-port-card-content {
+  position: relative;
+  width: 90%; /* Adjusts the width to fit the grid column */
+  height: 250px; /* Keeps your defined height */
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px;
+  transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.code-port-card-container .card-content {
+  display: flex;
+  align-items: flex-start; /* Align content to the top */
+}
+
+.code-port-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px #000000;
+  background-color: #0c0808;
+  color: #ffffff;
+}
+
+.code-port-card__content {
+  color: #000000;
+}
+
+.code-port-card__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.code-background {
+  background-color:  #242735;
+}
 
 /* About Us */
 .section-title {

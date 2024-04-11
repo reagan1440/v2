@@ -23,7 +23,7 @@ function MyPortfolio() {
   };
 
   const divStyle = {
-    backgroundImage: 'url("./img/hopefullyfinalbg.png")',
+    backgroundImage: 'url("./img/yellownotebg.png")',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     minHeight: '100vh',
@@ -35,8 +35,8 @@ function MyPortfolio() {
   
   const buttonStyle = {
     cursor: 'pointer',
-    width: '50px',
-    height: '50px',
+    width: '100px',
+    height: '100px',
     position: 'absolute',
     top: '580px',
     left: '350px',
@@ -52,6 +52,7 @@ function MyPortfolio() {
     left: windowWidth > 768 ? '320px' : '50%', // Adjusts based on screen width
     transform: windowWidth > 768 ? 'translateX(0)' : 'translateX(-500%)',
   };
+
 
   const imageContainerStyle = {
     position: 'absolute',
@@ -146,7 +147,7 @@ function MyPortfolio() {
     <div style={divStyle}>
       {/* Image acting as a button */}
       <img
-        src="./img/desktop folder.png"
+        src="./img/skiliify-code-removebg-preview.png"
         alt="Contact-ButtonBoring"
         onClick={navigateToGames}
         style={buttonStyle}
@@ -155,7 +156,7 @@ function MyPortfolio() {
 
       {/* New button for contact */}
       <img
-        src="./img/sticky_note__1_-removebg-preview (1).png"
+        src="./img/v.1-code-removebg-preview.png"
         alt="Contact-Button"
         onClick={navigateToContactMe}
         style={contactButtonStyle}
