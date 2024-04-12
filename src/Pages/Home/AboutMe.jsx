@@ -111,7 +111,7 @@ function AboutMe() {
 </div>
 
       </div>
-      <div className="main">
+      <div className="main-aboutme">
         <div className="header">
           <input
             className="search-input"
