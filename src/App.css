@@ -476,7 +476,7 @@ font-size: 22px;
   width: auto;
 }
 
-@media (min-width: 968px) {
+@media (min-width: 768px) {
   .random-class-40 {
     margin-top: 470px;  /* Increase top margin to lower the image on small screens */
   }
