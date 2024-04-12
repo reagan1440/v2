@@ -84,7 +84,7 @@ function MyPortfolio() {
   };
 
   const imageStyle4 = {
-    width: '70px',
+    width: '90px',
     height: 'auto',
     marginTop: '-90px',
     marginLeft: '160px',
@@ -136,9 +136,10 @@ function MyPortfolio() {
       style: imageStyle6,
     },
     {
-      src: './img/5ceb85ff937c7fcef5dabf6168f1b7ec-removebg-preview.png',
+      src: './img/github-code-removebg-preview.png',
       alt: 'Image 5',
       style: imageStyle4,
+      href: "https://github.com/reagan1440",
     },
     {
       src: './img/error-removebg-preview.png',

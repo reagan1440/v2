@@ -28,10 +28,10 @@ function AboutMe() {
           </Link>
   </li>
   <li className="menu-item">
-    <a href="/about-me">
+    <Link to="/about-me">
       <img src="./img/search icon.png" alt="Search" className="menu-icon" />
       Search
-    </a>
+    </Link>
   </li>
 
   <li className="menu-item">
