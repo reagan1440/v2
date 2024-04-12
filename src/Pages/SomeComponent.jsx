@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 export function SomeComponent() {
   let navigate = useNavigate();
 
-  const goBackToAboutMe = () => {
+  const goToAboutMe = () => {
     navigate('/about-me');
   };
 
@@ -19,7 +19,7 @@ export function SomeComponent() {
   return (
     <div>
       {/* Content of your component */}
-      <button onClick={goBackToAboutMe}>Back to About Me</button>
+      <button onClick={goToAboutMe}>Back to About Me</button>
       <button onClick={goToMySongs}>Go to My Songs</button>
       <button onClick={goToReagan}>Go to Reagan </button>
     </div>

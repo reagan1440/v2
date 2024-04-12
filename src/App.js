@@ -2,7 +2,7 @@ import "./App.css";
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import MyPortfolio from './Pages/Home/MyPortfolio';
-import AboutMe from './Pages/Home/AboutMe';
+import AboutMe from "./Pages/Home/AboutMe";
 import ContactMe from "./Pages/Home/ContactMe";
 import MySongs from './Pages/Home/MySongs'; 
 import Reagan from './Pages/Home/Reagan';

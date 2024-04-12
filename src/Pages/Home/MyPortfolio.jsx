@@ -22,6 +22,7 @@ function MyPortfolio() {
     navigate('/contact-me');
   };
 
+
   const divStyle = {
     backgroundImage: 'url("./img/yellownotebg.png")',
     backgroundSize: 'cover',
