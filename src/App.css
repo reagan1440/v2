@@ -476,6 +476,18 @@ font-size: 22px;
   width: auto;
 }
 
+@media (min-width: 968px) {
+  .random-class-40 {
+    margin-top: 470px;  /* Increase top margin to lower the image on small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .random-class-40 {
+    margin-top: 350px;  /* Further lower the image for very small screens */
+  }
+}
+
 
 .project-description {
    flex: 1;
@@ -720,7 +732,7 @@ font-size: 22px;
   margin-right: 280px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1277px) {
   .sidebar {
       width: 100%;
       height: auto;
