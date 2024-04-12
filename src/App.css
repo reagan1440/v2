@@ -708,7 +708,19 @@ font-size: 22px;
   padding: 20px;
   overflow-y: auto;
   height: 100vh;
+  margin-right: 280px;
 }
+
+@media (max-width: 768px) {
+  .sidebar {
+      width: 100%;
+      height: auto;
+  }
+  .main {
+      margin-right: 0;  /* Content now flows below the sidebar */
+  }
+}
+
 
 .header {
   margin-bottom: 20px;
