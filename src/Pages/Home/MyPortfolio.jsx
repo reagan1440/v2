@@ -127,7 +127,7 @@ function MyPortfolio() {
       src: './img/resume-code-removebg-preview.png',
       alt: 'Image 3',
       style: imageStyle5,
-      href: "https://docs.google.com/document/d/1P8SPYDx4JpSWeVSNrZrFGdGvF2WPbHjAwIc7kPw10Ks/edit?usp=sharing"
+      href: "https://docs.google.com/document/d/1WwOmpkZPKalbqKT4GaIVAzCG9ImgP6Aultl32nEMa-A/edit?usp=sharing"
     },
     {
       src: './img/contact-code-removebg-preview (1).png',
